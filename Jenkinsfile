@@ -15,7 +15,7 @@ pipeline {
         stage('conatiner'){
             steps{
                 sh 'docker build -t myphp .'
-                sh 'docker run --name my_php5 -d -p 80:80 myphp '
+                sh 'docker run --name my_php6 -d -p 80:80 myphp '
                 
             }
         }
